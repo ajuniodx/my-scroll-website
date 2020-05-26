@@ -15,17 +15,26 @@ body {
 ::-webkit-scrollbar-thumb:hover {background-color: #ff79c6;}
 
 section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   background: var(--color);
   height: 100vh;
 }
+h1 {
+  font-size: 3rem;
+  color: #f8f8f2;
+}
 nav {
-  padding: 25px;
+  padding: 20px;
   position: sticky;
   top: 0;
   background: #282a36;
   display: grid;
   grid-template-columns: 25% auto;
-  gap: 30%;
+  gap: 20%;
 }
 nav ul {
   margin: 0;
