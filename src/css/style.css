@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto',sans-serif;
+}
+
+::-webkit-scrollbar {width: 12px;}
+::-webkit-scrollbar-track {background-color: #f8f8f2;}
+::-webkit-scrollbar-thumb {border-radius: 2px; background-color: #bd93f9;}
+::-webkit-scrollbar-thumb:hover {background-color: #ff79c6;}
+
+section {
+  background: var(--color);
+  height: 100vh;
+}
+nav {
+  padding: 25px;
+  position: sticky;
+  top: 0;
+  background: #282a36;
+  display: grid;
+  grid-template-columns: 25% auto;
+  gap: 30%;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #f8f8f2;
+  transition: opacity 200ms ease-in-out;
+  overflow: hidden;
+}
+nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 3px;
+  margin-top: 3px;
+  border-radius: 3px;
+  background-color: #bd93f9;
+  transition: width .1s ease-in-out;
+}
+nav ul li a.current::after {
+  width: 100%;
+}
+.heading {
+  text-align: center;
+}
+.heading span {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #f8f8f2;
+}
